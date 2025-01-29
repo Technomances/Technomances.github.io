@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Moderna</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cards">Cards</a></li>
+            <li><a href="#contact">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Benvenuto nella mia Pagina</h1>
+        <img src="https://via.placeholder.com/800x300" alt="Immagine di intestazione">
+    </header>
+
+    <section id="cards">
+        <h2>Sezione delle Card</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Descrizione della card 1.</p>
+            </div>
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Descrizione della card 2.</p>
+            </div>
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Descrizione della card 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="external-links">
+        <h2>Visita i nostri siti</h2>
+        <div class="link-card">
+            <h3>Sito 1</h3>
+            <button onclick="window.open('https://www.example1.com', '_blank')">Apri Sito 1</button>
+        </div>
+        <div class="link-card">
+            <h3>Sito 2</h3>
+            <button onclick="window.open('https://www.example2.com', '_blank')">Apri Sito 2</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contatti</h2>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contatti: info@example.com</p>
+        <p>Seguici su <a href="#">LinkedIn</a> | <a href="#">Twitter</a></p>
+    </footer>
+</body>
+</html>
