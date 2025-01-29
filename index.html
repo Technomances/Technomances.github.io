@@ -1,74 +1,748 @@
 <!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Moderna</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health4Paws</title>
+    <!--MINIFIED CSS-->
+    <link rel="stylesheet" href="styles/style.min.css" />
+    <!--icon-->
+    <link rel="icon" href="assetsfavicon.ico" type="image/x-icon" />
+    <!--BOXICONS CDN-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+ <!-- Link to Swiper CSS via CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#cards">Cards</a></li>
-            <li><a href="#contact">Contatti</a></li>
+      <div class="container">
+        <div class="logo">
+          <a href="#"> <img src="./assets/Health4PawsTransparent.png" alt="logo"></a>
+            </div>
+        <ul id="nav__items">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#services">SERVIZI</a></li>
+          <li><a href="#specialists">SPECIALISTI</a></li>
+          <li><a href="#testimonials">RECENSIONI</a></li>
+          <li><a href="#appointment" class="btn">NEWSLETTER</a></li>
         </ul>
+
+        <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+        <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+      </div>
     </nav>
 
-    <header id="home">
-        <h1>Benvenuto nella mia Pagina</h1>
-        <img src="https://via.placeholder.com/800x300" alt="Immagine di intestazione">
+    <header>
+      <div class="container">
+        <div class="header__image">
+          <img src="./assets/Health4PawsTransparent.png" alt="Header Image" />
+        </div>
+
+        <div class="header__content">
+          <h1>
+            Benvenuto su Health4Paws
+            <br />
+          </h1>
+          <p>
+            La salute del tuo animale a portata di Zampa 🐾
+          </p>
+          <a href="#appointment" class="btn">Proprietario di Animali🐾</a>
+          <p></p>
+          <a href="#appointment" class="btn">Veterinari e professionisti🩺</a>
+
+        </div>
+      </div>
     </header>
 
-    <section id="cards">
-        <h2>Sezione delle Card</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Card 1</h3>
-                <p>Descrizione della card 1.</p>
-            </div>
-            <div class="card">
-                <h3>Card 2</h3>
-                <p>Descrizione della card 2.</p>
-            </div>
-            <div class="card">
-                <h3>Card 3</h3>
-                <p>Descrizione della card 3.</p>
-            </div>
-        </div>
-    </section>
+    <section id="services">
+      <h2>I Nostri Servizi</h2>
+      <p>
+        Health4Paws offre una gamma di servizi sia per i proprietari di animali domestici che per i veterinari. Scopri come possiamo aiutarti:
+      </p>
 
-    <section class="external-links">
-        <h2>Visita i nostri siti</h2>
-        <div class="link-card">
-            <h3>Sito 1</h3>
-            <button onclick="window.open('https://www.example1.com', '_blank')">Apri Sito 1</button>
-        </div>
-        <div class="link-card">
-            <h3>Sito 2</h3>
-            <button onclick="window.open('https://www.example2.com', '_blank')">Apri Sito 2</button>
-        </div>
-    </section>
+      <h2>Servizi per proprietari di Animali:</h2>
+      <p>
+        Offriamo una gamma di servizi per garantire il benessere dei tuoi animali.
+      </p>
+      <div class="container">
+        <article>
+          <i class='bx bx-folder-plus' ></i>
+          <div>
+            <h4>Cartella Clinica digitale</h4>
+            <small>Gestiamo in modo sicuro e completo la cartella clinica del tuo animale, tenendo traccia di tutte le informazioni mediche importanti.</small>
+          </div>
+        </article>
 
-    <section id="contact">
-        <h2>Contatti</h2>
-        <form>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Messaggio:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Invia</button>
-        </form>
-    </section>
+        <article>
+          <i class='bx bx-calendar-heart'></i>
+          <div>
+            <h4> Visite e Appuntamenti</h4>
+            <small>Organizziamo e gestiamo le visite e gli appuntamenti per il tuo animale, assicurandoci che non vengano mai dimenticati.</small>
+          </div>
+        </article>
 
-    <footer>
-        <p>Contatti: info@example.com</p>
-        <p>Seguici su <a href="#">LinkedIn</a> | <a href="#">Twitter</a></p>
-    </footer>
-</body>
+        <article>
+          <i class="bx bx-calendar-check"></i>
+          <div>
+            <h4>Prenotazioni Online</h4>
+            <small>Prenota facilmente gli appuntamenti con il nostro sistema di prenotazione online, sempre comodo e disponibile.</small>
+          </div>
+        </article>
+
+        <article>
+          <i class='bx bx-bot' ></i>
+          <div>
+            <h4>Assistenza Chatbot</h4>
+            <small>Il nostro chatbot ti offre supporto immediato per domande e consigli relativi al benessere del tuo animale.</small>
+          </div>
+        </article>
+
+        <article>
+          <i class="bx bx-message-dots"></i>
+          <div>
+            <h4>Chat con Veterinari</h4>
+            <small>Con la nostra chat, puoi entrare in contatto diretto con veterinari esperti per consigli e supporto in tempo reale.</small>
+          </div>
+        </article>
+
+        <article>
+          <i class='bx bxs-bell-ring' ></i>
+          <div>
+            <h4>Gestione Notifiche e Promemoria</h4>
+            <small>Ricevi notifiche e promemoria per non dimenticare mai le necessità del tuo animale.</small>
+          </div>
+        </article>
+
+        
+      </div>
+      <h2>Servizi per veterinari e professionisti:</h2>
+      <p> Offriamo una serie di servizi pensati per supportare il lavoro dei veterinari e garantire la salute e il benessere degli animali. </p>
+      <div class="container">
+          <article>
+          <i class="bx bx-calendar-check"></i>
+          <div>
+            <h4>Gestione Prenotazioni Online</h4>
+            <small>Gestisci facilmente gli appuntamenti con il nostro sistema di prenotazione online, sempre comodo e disponibile.</small>
+          </div>
+        </article>
+        <article>
+          <i class='bx bx-injection' ></i>
+          <div>
+            <h4>Gestione pazienti e dati clinici</h4>
+            <small>Supportiamo i veterinari nella gestione e monitoraggio degli esami e dei ricoveri, per garantire un servizio efficiente e moderno.</small>
+          </div>
+        </article>
+        <article>
+            <i class="bx bx-capsule"></i>
+            <div>
+              <h4>Gestione Farmaci</h4>
+              <small>Accedi al nostro sistema per ordinare farmaci e gestire le scorte, con la possibilità di interagire con fornitori esterni per un approvvigionamento rapido e sicuro.</small>
+            </div>
+        </article>
+      </div>
+
+</section>
+
+    <!--
+     <section id="specialists">
+      <h2>Our Caring and Qualified Specialists</h2>
+      <p>
+        Our specialists are experts in their fields, committed to ensuring the health and happiness of your beloved pets.
+      </p>
+
+      <div class="container">
+        <article>
+          <div class="specialist__image">
+            <img src="./assets/specialist1.jpg" alt="Specialist 1" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Felix Flexipaws</h4>
+            <small>Rehabilitation and Physical Therapy</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="http://linkedin.com/" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+
+            <a href="http://telegram.com/" target="_blank"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+
+            <a href="http://instagram.com/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+
+            <a href="http://facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+          <a
+          href=https://api.whatsapp.com/send?phone=whatsappphonenumber&text=your_message
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="./assets/specialist2.jpeg" alt="Specialist 2" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Nutra Whiskertail</h4>
+            <small>Pet Nutrition and Dietary Consultants</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="http://linkedin.com/" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+
+            <a href="http://telegram.com/" target="_blank"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+
+            <a href="http://instagram.com/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+
+            <a href="http://facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+          <a
+          href=https://api.whatsapp.com/send?phone=whatsappphonenumber&text=your_message
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="./assets/specialist3.jpeg" alt="Specialist 3" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Sterling Lifesaver</h4>
+            <small>Emergency and Critical Care Specialists</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="http://linkedin.com/" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+
+            <a href="http://telegram.com/" target="_blank"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+
+            <a href="http://instagram.com/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+
+            <a href="http://facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+          <a
+          href=https://api.whatsapp.com/send?phone=whatsappphonenumber&text=your_message
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="./assets/specialist4.webp" alt="Specialist 4" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Felix FractureFix</h4>
+            <small>Orthopedic Veterinary Surgeons</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="http://linkedin.com/" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+
+            <a href="http://telegram.com/" target="_blank"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+
+            <a href="http://instagram.com/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+
+            <a href="http://facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+          <a
+          href=https://api.whatsapp.com/send?phone=whatsappphonenumber&text=your_message
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="./assets/specialist5.webp" alt="Specialist 5" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Ivory Smilesworth</h4>
+            <small>Dental Care Experts for Pets</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="http://linkedin.com/" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+
+            <a href="http://telegram.com/" target="_blank"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+
+            <a href="http://instagram.com/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+
+            <a href="http://facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+          <a
+          href=https://api.whatsapp.com/send?phone=whatsappphonenumber&text=your_message
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+
+        <article>
+          <div class="specialist__image">
+            <img src="./assets/specialist6.webp" alt="Specialist 6" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Luna Catologist</h4>
+            <small>Behavior Consultant</small>
+          </div>
+          <div class="specialist__socials">
+            <a href="http://linkedin.com/" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+
+            <a href="http://telegram.com/" target="_blank"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+
+            <a href="http://instagram.com/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+
+            <a href="http://facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </div>
+          <a
+          href=https://api.whatsapp.com/send?phone=whatsappphonenumber&text=your_message
+            class="specialist__whatsapp"
+            target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </article>
+      </div>
+    </section>-->
+
+    <section id="testimonials" class="swiper mySwiper">
+    <h2>Recensioni da Proprietari e Veterinari</h2>
+    <p>Scopri cosa dicono i nostri clienti e i veterinari su Health4Paws:</p>
+    <div class="swiper-wrapper">
+
+        <article class="swiper-slide">
+            <p>Finalmente posso prenotare visite e tenere traccia della salute del mio cane senza stress. Molto comodo!</p>
+            <div class="petowner">
+                <div class="patient__info">
+                    <h5>Ciccio Pasticcio</h5>
+                    <small>Veterinario</small>
+                    <!-- Icone di valutazione -->
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="swiper-slide">
+            <p>Ora non perdo più tempo a cercare informazioni! Tutto è sempre aggiornato e a portata di mano.</p>
+            <div class="petowner">
+                <div class="patient__info">
+                    <h5>Gigi Zampone</h5>
+                    <small>Proprietario</small>
+                    <!-- Icone di valutazione -->
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="swiper-slide">
+            <p>Gestire le visite è ora facilissimo! Non perdo mai una scadenza, grazie a questa app super pratica.</p>
+            <div class="petowner">
+                <div class="patient__info">
+                    <h5>Teo Trippa</h5>
+                    <small>Veterinario</small>
+                    <!-- Icone di valutazione -->
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="swiper-slide">
+            <p>Non mi preoccupo più di dimenticare nulla! Ogni visita è sincronizzata e facile da gestire.</p>
+            <div class="petowner">
+                <div class="patient__info">
+                    <h5>Pamela Baffuta</h5>
+                    <small>Proprietario</small>
+                    <!-- Icone di valutazione -->
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="swiper-slide">
+            <p>Ricevere aggiornamenti sulle visite e gli esami è fantastico. Niente più stress!</p>
+            <div class="petowner">
+                <div class="patient__info">
+                    <h5>Lella Zampetta</h5>
+                    <small>Veterinario</small>
+                    <!-- Icone di valutazione -->
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="swiper-slide">
+            <p>Gestire la salute del mio peloso non è mai stato così semplice. E il servizio clienti è sempre super disponibile!</p>
+            <div class="petowner">
+                <div class="patient__info">
+                    <h5>Gigio Strabello</h5>
+                    <small>Proprietario</small>
+                    <!-- Icone di valutazione -->
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="swiper-slide">
+            <p>L'app è super facile da usare e mi fa sentire tranquillo sapendo che ogni visita è registrata.</p>
+            <div class="petowner">
+                <div class="patient__info">
+                    <h5>Fuffo Sgambettino</h5>
+                    <small>Veterinario</small>
+                    <!-- Icone di valutazione -->
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="swiper-slide">
+            <p>Finalmente posso tenere tutto sotto controllo. L'app è sempre aggiornata e molto utile!</p>
+            <div class="petowner">
+                <div class="patient__info">
+                    <h5>Chicco Coccolone</h5>
+                    <small>Proprietario</small>
+                    <!-- Icone di valutazione -->
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="swiper-pagination"></div>
+</section>
+
+
+<section id="appointment">
+  <div class="container">
+    <div class="info" class="tabcontent">
+        <!-- Tab Links -->
+        <div class="tabs">
+          <button id="proprietarioTab" class="tablink" onclick="openTab('proprietario')">Proprietario</button>
+          <button id="veterinarioTab" class="tablink" onclick="openTab('veterinario')">Veterinario</button>
+        </div>
+      
+      <div id="proprietario" class="tab-pane">
+         <h2>Possiedi un animale domestico?</h2> 
+         <p>Unisciti alla newsletter di Health4Paws per rimanere aggiornato sulle ultime novità, servizi per gestire la salute dei tuoi animali</p>
+        <article>
+          <div class="info__icon">
+            <i class='bx bxs-bell-ring'></i>
+          </div>
+          <div>
+            <h4>Ricevi Novità Esclusive</h4>
+            <small>Iscriviti per ricevere informazioni su nuove iniziative, eventi speciali dedicati al benessere dei tuoi animali.</small>
+          </div>
+        </article>
+
+        <article>
+          <div class="info__icon">
+            <i class='bx bxs-dog'></i>
+          </div>
+          <div>
+            <h4>Contenuti Personalizzati</h4>
+            <small>Ottieni consigli personalizzati per la salute e il benessere del tuo animale, direttamente nella tua inbox.</small>
+          </div>
+        </article>
+      </div>
+
+      <div id="veterinario" class="tab-pane">
+        <h2>Sei un veterinario o un professionista degli animali?</h2> 
+        <p>Entra a far parte del team di professionisti di Health4Paws per usufruire dei nostri servizi altamente sofisticati per migliorare e rendere più efficiente e moderno il tuo lavoro!</p>
+        <article>
+          <div class="info__icon">
+            <i class='bx bxs-bell-ring'></i>
+          </div>
+          <div>
+            <h4>Ricevi Novità</h4>
+            <small>Iscriviti per ricevere informazioni su aggiornamenti, nuove funzionalità e innovazioni digitali nel settore veterinario.</small>
+          </div>
+        </article>
+
+        <article>
+          <div class="info__icon">
+            <i class='bx bx-health' ></i>
+          </div>
+          <div>
+            <h4>Servizi Esclusivi</h4>
+            <small>Accedi ai servizi esclusivi per migliorare e digitalizzare il tuo lavoro.</small>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Modulo -->
+    <form id="form" action="https://formspree.io/f/mgvokgqd" method="POST" onsubmit="handleSubmit(event)">
+      <div class="form__group">
+        <label for="name">Nome</label>
+        <input type="text" placeholder="Il tuo Nome" name="name" id="name" required>
+      </div>
+
+      <div class="form__group">
+        <label for="phone">Numero di Telefono</label>
+        <input type="tel" placeholder="Numero di Telefono" name="phone" id="phone" pattern="[0-9]+" required>
+      </div>
+
+      <div class="form__group">
+        <label for="email">Email</label>
+        <input type="email" placeholder="La tua Email" name="email" id="email" required>
+      </div>
+
+      <button type="submit">Iscriviti</button>
+    </form>
+  </div>
+</section>
+  </div>
+</section>
+
+
+
+
+<footer>
+<div class="container">
+
+  <article>
+    <a href="#" class="logo"><img src="./assets/Health4PawsTransparent.png" alt="Logo"></a>
+  <p>Discover the compassionate care for your pets at Health4Paws.</p>
+<div>
+  <i class='bx bx-phone'></i>
+  <small>+3333333333</small>
+</div>
+<div>
+  <i class='bx bx-mail-send' ></i>
+  <small>health4pawsofficial@gmail.com</small>
+</div>
+
+</article>
+
+<article>
+  <h3>Support</h3>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Cookie Policy</a>
+  <a href="#">Purchasing Policy</a>
+  <a href="#">Terms & Conditions</a>
+</article>
+
+
+<article>
+  <h3>Permalinks</h3>
+  <a href="#">Home</a>
+  <a href="#services">Services</a>
+  <a href="#specialists">Specialists</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#appointment" class="btn">Newsletter</a>
+</article>
+
+<article>
+  <h3>Contact Us</h3>
+  <p>Press</p>
+  <p>FAQs</p>
+<div class="footer__socials">
+  <a href="#"><i class="bx bxl-linkedin"></i></a>
+  <a href="#"><i class="bx bxl-twitter"></i></a>
+  <a href="#"><i class="bx bxl-facebook"></i></a>
+  <a href="https://www.instagram.com/heath4paws.official?igsh=YWwwaGhncjh3bGlq&utm_source=qr"><i class="bx bxl-instagram"></i></a>
+</div>
+</article>
+
+
+</div>
+
+<div class="copyright">
+  <small> &copy; Designed and developed by <a href="https://github.com/Technomances">Technomancers</a></small>
+</div>
+</footer>
+
+    <!-- Link to Swiper JS via CDN -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./main.js" async></script>
+    
+  </body>
+<script>
+  function openTab(tabId) {
+    var allTabs = document.querySelectorAll('.tab-pane');
+    var allTabLinks = document.querySelectorAll('.tablink');
+
+    // Nascondi tutte le tab
+    allTabs.forEach(function(tab) {
+      tab.style.display = 'none';
+    });
+
+    // Rimuovi la classe "active" dai bottoni
+    allTabLinks.forEach(function(tabLink) {
+      tabLink.classList.remove('active');
+    });
+
+    // Mostra la tab selezionata
+    document.getElementById(tabId).style.display = 'block';
+
+    // Aggiungi la classe "active" al bottone selezionato
+    document.getElementById(tabId + 'Tab').classList.add('active');
+
+    // Modifica il modulo in base al tab selezionato
+    var form = document.getElementById('form');
+    if (tabId === 'proprietario') {
+      form.innerHTML = `
+        <div class="form__group">
+          <label for="name">Nome</label>
+          <input type="text" placeholder="Il tuo Nome" name="name" id="name" required>
+        </div>
+
+        <div class="form__group">
+          <label for="phone">Numero di Telefono</label>
+          <input type="tel" placeholder="Numero di Telefono" name="phone" id="phone" pattern="[0-9]+" required>
+        </div>
+
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input type="email" placeholder="La tua Email" name="email" id="email" required>
+        </div>
+
+        <button type="submit">Iscriviti</button>
+      `;
+    } else if (tabId === 'veterinario') {
+      form.innerHTML = `
+        <div class="form__group">
+          <label for="name">Nome</label>
+          <input type="text" placeholder="Il tuo Nome" name="name" id="name" required>
+        </div>
+
+        <div class="form__group">
+          <label for="phone">Numero di Telefono</label>
+          <input type="tel" placeholder="Numero di Telefono" name="phone" id="phone" pattern="[0-9]+" required>
+        </div>
+
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input type="email" placeholder="La tua Email" name="email" id="email" required>
+        </div>
+
+        <div class="form__group">
+          <label for="profession">Specializzazione</label>
+          <input type="text" placeholder="La tua Specializzazione" name="profession" id="profession" required>
+        </div>
+
+        <button type="submit">Unisciti</button>
+      `;
+    }
+  }
+
+  // Imposta il tab "Proprietario" come predefinito
+  document.addEventListener('DOMContentLoaded', function() {
+    openTab('proprietario');
+  });
+
+  // Funzione di invio del modulo
+  function handleSubmit(event) {
+    event.preventDefault(); // Previene il comportamento predefinito di invio del modulo
+
+    const form = document.getElementById('form');
+    
+    // Modifica il comportamento di invio: il modulo non si sposterà e i dati verranno inviati in modo asincrono tramite Formspree.
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form)
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();  // Resetta il modulo dopo l'invio
+        alert('Richiesta inviata con successo!');
+      } else {
+        throw new Error('Errore nell\'invio del modulo.');
+      }
+    })
+    .catch(error => {
+      console.error('Errore:', error);
+      //alert('Si è verificato un errore, riprova.');
+    });
+  }
+</script>
+
+
 </html>
