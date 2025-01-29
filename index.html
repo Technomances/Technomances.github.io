@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health4Paws</title>
     <!--MINIFIED CSS-->
-    <link rel="stylesheet" href="styles/style.min.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <!--icon-->
     <link rel="icon" href="assetsfavicon.ico" type="image/x-icon" />
     <!--BOXICONS CDN-->
@@ -34,11 +34,11 @@
         <button id="close__nav-btn"><i class="bx bx-x"></i></button>
       </div>
     </nav>
-
+<div class="home-header">
     <header>
       <div class="container">
         <div class="header__image">
-          <img src="./assets/Health4PawsTransparent.png" alt="Header Image" />
+          <img src="./assets/Health4Paws.png" alt="Header Image" />
         </div>
 
         <div class="header__content">
@@ -49,16 +49,16 @@
           <p>
             La salute del tuo animale a portata di Zampa 🐾
           </p>
-          <a href="#appointment" class="btn">Proprietario di Animali🐾</a>
+          <a href="http://localhost:4000" class="btn">Proprietario di Animali🐾</a>
           <p></p>
-          <a href="#appointment" class="btn">Veterinari e professionisti🩺</a>
+          <a href="http://localhost:3000" class="btn">Veterinari e professionisti🩺</a>
 
         </div>
       </div>
     </header>
-
+  
     <section id="services">
-      <h2>I Nostri Servizi</h2>
+      <h1>I Nostri Servizi</h1>
       <p>
         Health4Paws offre una gamma di servizi sia per i proprietari di animali domestici che per i veterinari. Scopri come possiamo aiutarti:
       </p>
@@ -577,7 +577,7 @@
     </form>
   </div>
 </section>
-  </div>
+  
 </section>
 
 
@@ -588,14 +588,17 @@
 
   <article>
     <a href="#" class="logo"><img src="./assets/Health4PawsTransparent.png" alt="Logo"></a>
-  <p>Discover the compassionate care for your pets at Health4Paws.</p>
+    <p>Scopri la cura professionale dedicata per i tuoi animali presso Health4Paws.</p>
 <div>
   <i class='bx bx-phone'></i>
-  <small>+3333333333</small>
+  <a href="tel:+393716365762"><small>+39 3716365762</small></a>
 </div>
 <div>
   <i class='bx bx-mail-send' ></i>
-  <small>health4pawsofficial@gmail.com</small>
+  <a href="mailto:health4pawsofficial@gmail.com">
+    <i className='bx bx-mail-send'></i>
+    <small> health4pawsofficial@gmail.com </small>
+  </a>
 </div>
 
 </article>
@@ -611,7 +614,7 @@
 
 <article>
   <h3>Permalinks</h3>
-  <a href="#">Home</a>
+  <a href="/">Home</a>
   <a href="#services">Services</a>
   <a href="#specialists">Specialists</a>
   <a href="#testimonials">Testimonials</a>
@@ -637,7 +640,7 @@
   <small> &copy; Designed and developed by <a href="https://github.com/Technomances">Technomancers</a></small>
 </div>
 </footer>
-
+</div>
     <!-- Link to Swiper JS via CDN -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
