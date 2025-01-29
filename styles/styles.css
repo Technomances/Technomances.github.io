@@ -641,14 +641,18 @@ section >  h2 {
     color: #fff
 }
 
+#appointment .container .tab-pane {
+  margin-top: 2.0rem; 
+}
+
 #appointment .container .info p {
-    margin: .5rem 0 2.5rem
+    margin: .5rem 0 2.5rem;
 }
 
 #appointment .container .info article {
     display: flex;
     gap: 2rem;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
 }
 
 #appointment .container .info article small {
